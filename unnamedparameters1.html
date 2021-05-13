@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function pic(object){
+			let result=Object.create(null);
+			for(let i=0;i<=arguments.length;i++){
+				result[arguments[i]]=Object[arguments[i]]
+			}
+			return result
+		}
+		let book={
+			title:"ES6",
+			author:"saiteja"
+		}
+		let Bookdata=pic(book,"title","author")
+		console.log(Bookdata.title)
+	</script>
+
+</body>
+</html>
